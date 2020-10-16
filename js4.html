@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bodydiv
+        {
+            width:300px;
+            height:200PX;
+            background-color: aqua;
+            position:absolute;
+            z-index: -1;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        function moveme()
+        {
+            var box=document.getElementById('bodydiv');
+            bodydiv.style.marginTop="500px";
+            bodydiv.style.marginLeft="500px";
+            
+        }
+        
+    </script>
+    <div id="bodydiv">
+        
+
+    </div>
+    <button id="b1" onclick="moveme()">move</button>
+    <button id="b2" onclick="moveme()">replace</button>
+</body>
+</html>

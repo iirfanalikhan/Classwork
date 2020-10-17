@@ -22,6 +22,10 @@
            border: black 1px solid;
            background-color: aquamarine;
        }
+       #divison
+       {
+            width:90px;
+       }
         
     </style>
 
@@ -47,6 +51,17 @@
            document.getElementById("display").value = output;
             document.getElementById("input").value = output;
 
+
+
+        }
+        function divison()
+        {
+            var result =document.getElementById("input").value ;
+            var out=1/result;
+            document.getElementById("display").value = out;
+
+            
+            
 
 
         }
@@ -84,7 +99,7 @@
          </tr>
          <tr>
         
-            <td colspan="3"><button onclick="operatedivision('1/x')" id="value">1/x</button></td>
+            <td colspan="3"><button onclick="divison()" id="divison">1/x</button></td>
           </tr>
 
 

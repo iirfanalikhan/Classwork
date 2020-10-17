@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addfreind()
+        {
+            var tb = document.getElementById('tbf').value;    
+            var frnds = document.getElementById('freinds');
+            
+            frnds.innerHTML += "<li>" + tb + "</li>";
+            document.getElementById('tbf').value ='';
+            document.getElementById('tbf').focus();
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="tbf">
+
+         <button onkeydown="addfreind()">
+                 add
+        </button>
+        <ul id="freinds">
+
+        </ul>
+</body>
+</html>

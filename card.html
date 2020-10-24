@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body
+    {
+        margin:0px;
+    }
+    
+    section
+    {
+     background-color: #01E37F;
+     width:auto;
+     height: 100vh;
+
+    }
+    .apple-pic
+    {   
+        background-image:linear-gradient(to top,#ABE72D,#AFE832) ;
+        box-shadow: 50px 50px 300px #759339;
+       /* background-image: url();*/
+        background-size: cover;
+        height:10vh;        
+        width: 10vw;
+        position: absolute;
+        top:40%;
+        right:65%;
+        border:red solid 2px;
+        z-index: 50;
+        border-radius: 5px;
+    }
+    .applebox
+    {
+        background-image:linear-gradient(to top,#ABE72D,#AFE832) ;
+        border:black solid 2px;
+        height:40vh;        
+        width: 18vw;
+        position: absolute;
+        top:30%;
+        right:60%;
+        z-index:45;
+    }
+    .white
+    {
+        background-color:white ;
+        border:black solid 1px;
+        height:50vh;        
+        width: 50vw;
+        position: absolute;
+        top:25%;
+        right:25%;
+    }
+    .rightbox
+    {
+        
+        color: black;
+        background-color:yellow;
+        border:black solid 1px;
+        height:50vh;        
+        width: 25vw;
+        position: absolute;
+        top:%;
+        right:0%;
+        z-index: 40;
+    }
+    .leftbox
+    {   color:black;
+        background-color:black;
+        border:black solid 1px;
+        height:50vh;        
+        width: 25vw;
+        position: absolute;
+        top:0%;
+        right:50%;  
+        z-index: 42;
+    }
+    
+    .applebox .applebottom ul li img
+    {   
+        width: 4vw;
+        height:5vh;
+        border: black solid 1px;
+        border-radius:3px;
+        
+           } 
+    .applebox .applebottom ul
+    { 
+        width: 15vw;
+        display: flex;
+        position: absolute;
+        left:-16% ;
+
+        
+
+    }
+    .applebox .applebottom ul li
+    {
+        list-style-type: none;
+        margin-left: 2px;
+        
+                
+    }
+    .applebottom
+    {   
+        width: 18vw;
+        height: 8vh;
+        background-color:white;
+        z-index: 100;
+        position: absolute;
+        top:80%;
+    }
+    .header
+    {
+        line-height: 1em;
+     background-color:pink;
+    }
+    .numbers
+    {
+        background-color: darkgray;
+    }
+    
+
+
+
+</style>
+</head>
+<body>
+    <section>
+        <div class="apple-pic" id ="topapple">
+           <img src="images/apple.png"> 
+                   </div>
+        <div class="applebox">
+            <div class="applebottom" id="topapple">
+                <ul>
+                    <li><img src="images/2.jpg" alt="" id="applebottom1" onclick="show()"></li>
+                    <li><img src="images/3.jpg" alt="" id="applebottom2" onclick="show()"></li>
+                    <li><img src="images/4.jpg" alt="" id="applebottom3" onclick="show()"></li>
+                    <li><img src="images/5.jpg" alt="" id="applebottom4" onclick="show()"></li>
+                </ul>
+            </div>
+
+
+        </div>
+        
+        <div class="white">
+        <div class="rightbox">
+            <div class="header">
+                <p="htex">Delicious Apple</p>
+                <span>COD 45999<span>
+
+            </div>
+            <div class="numbers">
+                <span class="RS">RS</span>
+                <span>1710</span>
+            
+            </div>
+        </div>
+        <div class="leftbox">
+          
+        </div>
+        </div>
+    </section>
+    <script>
+        function show()
+        {
+            document.getElementById("topapple").src = "images/2.jpg";  
+            //document.getElementById('applebottom').src=""
+                       
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            margin: 0px;
+        }
+        #main
+        {
+            height: 8000px;
+            background-color: yellow;
+            
+        }
+        #box
+        {
+            background-color: red;
+            height: 200px;
+            position: fixed;
+            width: 100%;
+            
+            
+
+
+        }
+    </style>
+    <script>
+        function scroller()
+        {
+            var y=window.scrollY;
+            var box = document.getElementById('box')
+            if(y<500)
+            {
+                console.log(y);
+                box.style.display="none"
+                
+            }    
+            else{
+                box.style.display="block";
+                
+
+            }
+        }
+        
+    </script>
+</head>
+<body onscroll="scroller()">
+    <div id="box">
+
+    </div>
+    <div id="main">
+
+
+    </div>
+    
+</body>
+</html>

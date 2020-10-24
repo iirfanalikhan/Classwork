@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    
+    #box img  
+    {
+        width: 200px;
+        height: 200px;
+        border: 1px green solid;
+    }
+    .bottom
+    {
+        display: flex;
+    }
+    .bottom img
+    {
+        width:46.5px;
+        height:40px;
+        border:grey solid 1px;
+        margin:1px;
+    }
+#Display
+{
+    width:50%;
+    height:30vh;
+    border:green solid 1px;
+    font-size: 30px;
+    color:rgb(20, 30, rgb(44, 44, 204));
+    background-color: whitesmoke;
+    text-align: center;
+    line-height: 30vh;
+}
+
+.section
+{
+    margin-top:20px;
+
+}
+.section input
+{   
+    border:grey solid 1px;
+    border-radius: 3px;
+    width:20%;
+    height: 5vh;
+    font-size: 18px;
+
+}
+.section input:hover
+{
+    
+    animation:move 10sec;
+}
+@keyframes move 
+{
+    from{background-color:grey};
+    to{background-color:lightgreen};
+    {background-color:blue};
+}   
+
+.section button
+{   
+    background-color: navajowhite;
+    text-align: center;
+    margin:10px 0px;
+    width:10%;
+    height:50px;
+    border-radius: 20px;
+    color:brown;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    <div id="box">
+        <img src="" alt="" id=main>
+
+    </div>
+        <div class="bottom">
+            <img src="images/1.png"   onclick="show(this)" id="first"  class="thumb">
+            <img src="images/2.jpg"   onclick="show(this)" id="sec"    class="thumb" >
+            <img src="images/3.jpg"   onclick="show(this)" id="third"  class= "thumb">
+            <img src="images/4.jpg"   onclick="show(this)" id="forth"  class="thumb">
+        </div> 
+    -->
+        <script>
+          function show(img)
+          { 
+              document.getElementById('main').src = img.src;
+        }   
+        function check(){
+
+           var given = document.getElementById('textbox').value;
+           if( given >=18)
+           {
+               document.getElementById('Display').innerHTML="You are eligible to cast vote";
+           } else{
+            document.getElementById('Display').innerHTML="You are not eligible to cast vote";
+           }
+            
+           }
+        </script>
+
+
+        <div class="section">
+        <div>
+            <input type="text" id="textbox" >
+        </div>
+        <button onclick="check()">Check Vote Status</button>
+        <div id="Display">
+
+        </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+</head>
+<style>
+  #box
+  {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+
+  }
+</style>
+<body>
+  <!--
+  <script>
+    $(document).ready(function() {
+      $('button').click(function() {
+        $('#box').animate({left:'200px'}).animate({top:'200px'})
+        .animate({left:"0px"});    
+        
+      })
+      });
+  </script>
+
+  
+    <script>
+       $(document).ready(function () {
+       $('button').click(function() {
+        $('h1').toggle(2000);
+               
+       });
+       });
+    </script>
+    <h1 style="display: none;">Sir Mazhar</h1>
+  
+  <button>show</button>   
+
+  <button>start</button>
+  <div id="box" style="position: absolute;"></div>
+  -->
+  <script>
+    setInterval(function(){
+        var time= new Date();
+        var clock = time.getHours() + ":" + time.getMinutes() ;
+        document.querySelector('h1').innerHTML = clock;
+        },100)
+  </script>
+  <h1>
+    
+  </h1>
+ 
+</body>
+</html>
